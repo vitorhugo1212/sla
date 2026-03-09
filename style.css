@@ -1,0 +1,28 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "ca ca ca"
+    "bg cor cor"
+    "per per per";
+    grid-template-rows: 200px 600px 150px;
+    grid-template-columns: 200px auto auto;
+}
+header{
+    grid-area: ca;
+    background-color: rgb(255, 91, 91);
+}
+aside{
+    grid-area: bg;
+    background-color: brown;
+}
+main{
+    grid-area: cor;
+    background-color: blanchedalmond;
+}
+footer{
+    grid-area: per;
+    background-color: black;
+}
+@media only screen and (max-width:850){
+    
+}
