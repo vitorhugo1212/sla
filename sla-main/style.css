@@ -1,0 +1,45 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "ca ca ca"
+    "bg cor cor"
+    "per per per";
+    grid-template-rows: 200px auto 150px;
+    grid-template-columns: 200px auto auto;
+}
+header{
+    grid-area: ca;
+    background-color: rgb(255, 91, 91);
+}
+aside{
+    grid-area: bg;
+    background-color: brown;
+}
+main{
+    grid-area: cor;
+    background-color: blanchedalmond;
+}
+footer{
+    grid-area: per;
+    background-color: black;
+    grid-template-columns: auto;
+}
+@media only screen and (max-width:1000px){
+
+}
+.mamae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    border: pink 2px solid;
+    background-color: blue;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px;
+}
