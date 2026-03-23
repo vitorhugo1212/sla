@@ -1,0 +1,56 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "ca ca ca"
+    "bg cor cor"
+    "per per per";
+    grid-template-rows: 200px auto 150px;
+    grid-template-columns: 200px auto auto;
+}
+header{
+    grid-area: ca;
+    background-color: rgb(194, 147, 104);
+}
+aside{
+    grid-area: bg;
+    background-color: rgb(220, 190, 150);
+}
+main{
+    grid-area: cor;
+    background-color: rgb(245, 237, 220);
+}
+footer{
+    grid-area: per;
+    background-color: rgb(189, 145, 94);
+    grid-template-columns: auto;
+}
+@media (max-width: 800px) {
+    body {
+        grid-template-areas: "ca"
+                             "cor"
+                             "per";
+        grid-template-columns: auto;
+        grid-template-rows: 150px auto 200px;
+
+    }
+
+    aside {
+        display: none;
+    }
+}
+.mamae{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    border: pink 2px solid;
+    background-color: blue;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px;
+}
